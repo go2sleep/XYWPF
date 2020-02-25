@@ -2,11 +2,11 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:XYWPF.Skin">
-    <ImageBrush x:Key="MainWindowBackground" ImageSource="../Images/Generic/MainWindowBackground.jpg" Stretch="UniformToFill"/>
-    <Color x:Key="BorderColor">#418bca</Color>
-    <Color x:Key="ButtonBackgroundColor">#418bca</Color>
+    <ImageBrush x:Key="MainWindowBackground" ImageSource="../Images/Red/MainWindowBackground.jpg" Stretch="UniformToFill"/>
+    <Color x:Key="BorderColor">#d85450</Color>
+    <Color x:Key="ButtonBackgroundColor">#d85450</Color>
     <Color x:Key="ButtonForeColor">#FFFFFF</Color>
-
+    
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="../Styles/Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>

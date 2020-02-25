@@ -28,11 +28,12 @@
             </Style>
         </ResourceDictionary>
     </Window.Resources>
-    <Grid Height="320" Width="400" HorizontalAlignment="Right" VerticalAlignment="Top">
-
-        <ScrollViewer Width="350" Style="{DynamicResource ScrollViewerStyle1}"  >
-            <WrapPanel Margin="15,50" x:Name="ImagePanel">
-            </WrapPanel>
-        </ScrollViewer>
+    <Grid>
+        <Grid Height="320" Width="400" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <ScrollViewer Width="350" Style="{DynamicResource ScrollViewerStyle1}"  >
+                <WrapPanel Margin="15,50" x:Name="ImagePanel"></WrapPanel>
+            </ScrollViewer>
+        </Grid>
+        <Button Content="Private"  Width="100" Height="30"  />
     </Grid>
 </Window>
