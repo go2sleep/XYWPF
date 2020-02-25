@@ -1,0 +1,28 @@
+﻿<Window x:Class="XYWPF.Sample.Behavior.DragInCanvasSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:XY="clr-namespace:XYWPF.CoreLib.Behavior;assembly=XYWPF.CoreLib"
+        xmlns:local="clr-namespace:XYWPF.Sample.Behavior"
+        mc:Ignorable="d"
+        Title="DragInCanvasSample" Height="450" Width="800">
+    <Canvas>
+        <Rectangle Canvas.Left="10" Canvas.Top="10" Fill="Yellow" Width="40" Height="60">
+            <i:Interaction.Behaviors>
+                <XY:DragInCanvasBehavior></XY:DragInCanvasBehavior>
+            </i:Interaction.Behaviors>
+        </Rectangle>
+        <Ellipse Canvas.Left="10" Canvas.Top="70" Fill="Blue" Width="80" Height="60">
+            <i:Interaction.Behaviors>
+                <XY:DragInCanvasBehavior></XY:DragInCanvasBehavior>
+            </i:Interaction.Behaviors>
+        </Ellipse>
+        <Ellipse Canvas.Left="80" Canvas.Top="70" Fill="OrangeRed" Width="40" Height="70">
+            <i:Interaction.Behaviors>
+                <XY:DragInCanvasBehavior></XY:DragInCanvasBehavior>
+            </i:Interaction.Behaviors>
+        </Ellipse>
+    </Canvas>
+</Window>
