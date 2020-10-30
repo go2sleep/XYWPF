@@ -1,0 +1,12 @@
+﻿<Window x:Class="XYWPF.Sample.Effect.WinLoadingDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XYWPF.Sample.Effect"
+        mc:Ignorable="d"
+        Title="Loading加载文字水波纹动画效果" Height="450" Width="800" Background="#FF2C2929">
+    <Grid>
+        <local:MyLoadingControl Width="520" Height="150" FontSize="120" Value="0"></local:MyLoadingControl>
+    </Grid>
+</Window>

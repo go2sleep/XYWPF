@@ -29,11 +29,30 @@
         </ResourceDictionary>
     </Window.Resources>
     <Grid>
+        <Button Content="关闭" Width="100" Height="40" Margin="20" VerticalAlignment="Top" HorizontalAlignment="Left" Click="ButtonClose_Click" />
         <Grid Height="320" Width="400" HorizontalAlignment="Right" VerticalAlignment="Top">
             <ScrollViewer Width="350" Style="{DynamicResource ScrollViewerStyle1}"  >
                 <WrapPanel Margin="15,50" x:Name="ImagePanel"></WrapPanel>
             </ScrollViewer>
         </Grid>
-        <Button Content="Private"  Width="100" Height="30"  />
+        <StackPanel Orientation="Vertical" Margin="50 350 50 50">
+            <StackPanel Orientation="Horizontal" Margin="0 0 50 0">
+                <Button Content="画刷特效"  Width="100" Height="40" Margin="20" Click="Button_Click" />
+                <Button Content="告警特效"  Width="100" Height="40" Margin="20" Click="Button_Click_1" />
+                <Button Content="滚动特效"  Width="100" Height="40" Margin="20" Click="Button_Click_2" />
+                <Button Content="搜索特效"  Width="100" Height="40" Margin="20" Click="Button_Click_3" />
+                <Button Content="粒子特效"  Width="100" Height="40" Margin="20" Click="Button_Click_4" />
+                <Button Content="图片翻转特效"  Width="100" Height="40" Margin="20" Click="Button_Click_5" />
+                <Button Content="图片环形旋转轮动效果"  Width="200" Height="40" Margin="20" Click="Button_Click_6" />
+                <Button Content="聚光灯照亮文字动画效果"  Width="200" Height="40" Margin="20" Click="Button_Click_7" />
+                <Button Content="聚光灯查看内容特效"  Width="200" Height="40" Margin="20" Click="Button_Click_8" />
+                <Button Content="加载文字水波纹动画效果"  Width="200" Height="40" Margin="20" Click="Button_Click_9" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 50 0">
+                <Button Content="3D翻牌式倒计时特效"  Width="200" Height="40" Margin="20" Click="Button_Click_10" />
+                <Button Content="图片手风琴动态切换效果"  Width="200" Height="40" Margin="20" Click="Button_Click_11" />
+            </StackPanel>
+        </StackPanel>
+
     </Grid>
 </Window>

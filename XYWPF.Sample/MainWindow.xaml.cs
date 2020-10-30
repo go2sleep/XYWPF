@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using XYWPF.Sample.BrushDemo;
+using XYWPF.Sample.Effect;
 
 namespace XYWPF.Sample
 {
@@ -64,6 +66,96 @@ namespace XYWPF.Sample
                 mergedDicts.Clear();
                 mergedDicts.Add(skinResource);
             }
+        }
+
+        private void ButtonClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            WinBrush win = new WinBrush();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            WinAlarmDemo win = new WinAlarmDemo();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            WinLoading win = new WinLoading();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            WinSearch win = new WinSearch();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            WinPartiCles win = new WinPartiCles();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            WinFlipPicture win = new WinFlipPicture();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            Window win = new WinImageBox();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            Window win = new WinTextDemo();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            Window win = new WinUCImageBox();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_9(object sender, RoutedEventArgs e)
+        {
+            Window win = new WinLoadingDemo();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_10(object sender, RoutedEventArgs e)
+        {
+            Window win = new WinCardDemo();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_11(object sender, RoutedEventArgs e)
+        {
+            Window win = new WinExpanderDemo();
+            win.Owner = this;
+            win.Show();
         }
     }
 }

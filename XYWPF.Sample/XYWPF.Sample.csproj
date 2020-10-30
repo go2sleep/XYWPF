@@ -37,7 +37,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\Lib\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -56,7 +58,103 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Animation\MouseAnimation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Behavior\DragInCanvasSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BrushDemo\WinBrush.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Card\MyCardControlBack.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Card\MyCardControlBottom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Card\MyCardControlFront.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Card\MyCardControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Expander\ExpanderStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\MyImageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\MyImageButtom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\MyLoadingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\RingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\SearchTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\UCImageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\WinAlarmDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Card\WinCardDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Expander\WinExpanderDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\WinFlipPicture.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\WinImageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\WinLoading.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\ParticlesDemo\WinPartiCles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\WinLoadingDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\WinSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\WinTextDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\WinUCImageBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -64,12 +162,87 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Animation\MouseAnimation.xaml.cs">
+      <DependentUpon>MouseAnimation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Behavior\DragInCanvasSample.xaml.cs">
       <DependentUpon>DragInCanvasSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BrushDemo\RevealBorderBrushExtension.cs" />
+    <Compile Include="BrushDemo\WinBrush.xaml.cs">
+      <DependentUpon>WinBrush.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\Expander\ExpanderClass.cs" />
+    <Compile Include="Effect\MyCanvas.cs" />
+    <Compile Include="Effect\Card\MyCardControlBack.xaml.cs">
+      <DependentUpon>MyCardControlBack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\Card\MyCardControlBottom.xaml.cs">
+      <DependentUpon>MyCardControlBottom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\Card\MyCardControlFront.xaml.cs">
+      <DependentUpon>MyCardControlFront.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\Card\MyCardControl.xaml.cs">
+      <DependentUpon>MyCardControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\MyImageBox.xaml.cs">
+      <DependentUpon>MyImageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\MyImageButtom.xaml.cs">
+      <DependentUpon>MyImageButtom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\MyLoadingControl.xaml.cs">
+      <DependentUpon>MyLoadingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\ParticlesDemo\Particle.cs" />
+    <Compile Include="Effect\ParticlesDemo\ParticleSystem.cs" />
+    <Compile Include="Effect\ParticlesDemo\ParticleSystemManager.cs" />
+    <Compile Include="Effect\RingControl.xaml.cs">
+      <DependentUpon>RingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\SearchTextBox.xaml.cs">
+      <DependentUpon>SearchTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\UCImageBox.xaml.cs">
+      <DependentUpon>UCImageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\WinAlarmDemo.xaml.cs">
+      <DependentUpon>WinAlarmDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\Card\WinCardDemo.xaml.cs">
+      <DependentUpon>WinCardDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\Expander\WinExpanderDemo.xaml.cs">
+      <DependentUpon>WinExpanderDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\WinFlipPicture.xaml.cs">
+      <DependentUpon>WinFlipPicture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\WinImageBox.xaml.cs">
+      <DependentUpon>WinImageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\WinLoading.xaml.cs">
+      <DependentUpon>WinLoading.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\ParticlesDemo\WinPartiCles.xaml.cs">
+      <DependentUpon>WinPartiCles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\WinLoadingDemo.xaml.cs">
+      <DependentUpon>WinLoadingDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\WinSearch.xaml.cs">
+      <DependentUpon>WinSearch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\WinTextDemo.xaml.cs">
+      <DependentUpon>WinTextDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\WinUCImageBox.xaml.cs">
+      <DependentUpon>WinUCImageBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -115,6 +288,67 @@
       <Project>{688cec03-7827-4baa-aab5-32996c341145}</Project>
       <Name>XYWPF.Skin</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\rocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\snowbg.jpg" />
+    <Resource Include="Images\streetbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\flower_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\flower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Cover.png" />
+    <Resource Include="Images\Cover_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\listen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\listen_hover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\speak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\flower.jpg" />
+    <Resource Include="Images\flower_hover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hummingbird.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hummingbird_hover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\market.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\market_hover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sunset.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\f3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\img1.jpg" />
+    <Resource Include="Images\img2.jpg" />
+    <Resource Include="Images\img3.jpg" />
+    <Resource Include="Images\img4.jpg" />
+    <Resource Include="Images\img5.jpg" />
+    <Resource Include="Images\img6.jpg" />
+    <Resource Include="Images\img7.jpg" />
+    <Resource Include="Images\img8.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="XYWPF.Sample.Effect.MyImageButtom"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             x:Name="MyUserControl"
+             xmlns:local="clr-namespace:XYWPF.Sample.Effect"
+             mc:Ignorable="d">
+    <Border x:Name="border" BorderThickness="0" Background="Transparent" Loaded="MyUserControl_Loaded">
+        <Grid ClipToBounds="True">
+            <Image x:Name="imgNormal" Width="{Binding Width,ElementName=MyButton}" Height="{Binding Height,ElementName=MyUserControl}" Source="{Binding NormalImage,ElementName=MyUserControl}" Stretch="Fill"></Image>
+            <Image x:Name="imgHover" Width="{Binding Width,ElementName=MyButton}" Height="{Binding Height,ElementName=MyUserControl}" Source="{Binding HoverImage,ElementName=MyUserControl}" Stretch="Fill" Panel.ZIndex="-1"></Image>
+        </Grid>
+    </Border>
+
+</UserControl>
