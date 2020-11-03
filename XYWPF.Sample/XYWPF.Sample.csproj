@@ -70,6 +70,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Effect\3DWave\Win3DParticleWave.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Effect\Card\MyCardControlBack.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -134,6 +138,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Effect\WinLineGradientBrush.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Effect\WinLoading.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -175,6 +183,10 @@
     <Compile Include="BrushDemo\RevealBorderBrushExtension.cs" />
     <Compile Include="BrushDemo\WinBrush.xaml.cs">
       <DependentUpon>WinBrush.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\3DWave\Particle.cs" />
+    <Compile Include="Effect\3DWave\Win3DParticleWave.xaml.cs">
+      <DependentUpon>Win3DParticleWave.xaml</DependentUpon>
     </Compile>
     <Compile Include="Effect\Expander\ExpanderClass.cs" />
     <Compile Include="Effect\MyCanvas.cs" />
@@ -225,6 +237,9 @@
     </Compile>
     <Compile Include="Effect\WinImageBox.xaml.cs">
       <DependentUpon>WinImageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\WinLineGradientBrush.xaml.cs">
+      <DependentUpon>WinLineGradientBrush.xaml</DependentUpon>
     </Compile>
     <Compile Include="Effect\WinLoading.xaml.cs">
       <DependentUpon>WinLoading.xaml</DependentUpon>

@@ -51,6 +51,8 @@
             <StackPanel Orientation="Horizontal" Margin="0 0 50 0">
                 <Button Content="3D翻牌式倒计时特效"  Width="200" Height="40" Margin="20" Click="Button_Click_10" />
                 <Button Content="图片手风琴动态切换效果"  Width="200" Height="40" Margin="20" Click="Button_Click_11" />
+                <Button Content="字体霓虹灯渐变动画效果"  Width="200" Height="40" Margin="20" Click="Button_Click_12" />
+                <Button Content="3D粒子波浪效果"  Width="200" Height="40" Margin="20" Click="Button_Click_13" />
             </StackPanel>
         </StackPanel>
 

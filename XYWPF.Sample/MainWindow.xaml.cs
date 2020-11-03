@@ -157,5 +157,19 @@ namespace XYWPF.Sample
             win.Owner = this;
             win.Show();
         }
+
+        private void Button_Click_12(object sender, RoutedEventArgs e)
+        {
+            Window win = new WinLineGradientBrush();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_13(object sender, RoutedEventArgs e)
+        {
+            Window win = new Effect._3DWave.Win3DParticleWave();
+            win.Owner = this;
+            win.Show();
+        }
     }
 }
