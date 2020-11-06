@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="XYWPF.Sample.Effect.Ctrl.RoundMenuControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:XYWPF.Sample.Effect.Ctrl"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <Storyboard x:Key="stbShow">
+            <DoubleAnimation Storyboard.TargetName="myEllipseGeometry"
+                             Storyboard.TargetProperty="RadiusX"
+                             Duration="0:0:0.5" From="0" To="200"
+                             FillBehavior="HoldEnd"/>
+            <DoubleAnimation Storyboard.TargetName="myEllipseGeometry"
+                             Storyboard.TargetProperty="RadiusY"
+                             Duration="0:0:0.5" From="0" To="200"
+                             FillBehavior="HoldEnd" />
+        </Storyboard>
+        <Storyboard x:Key="stbHide">
+            <DoubleAnimation Storyboard.TargetName="myEllipseGeometry"
+                             Storyboard.TargetProperty="RadiusX"
+                             Duration="0:0:0.5" From="200" To="0"
+                             FillBehavior="HoldEnd"/>
+            <DoubleAnimation Storyboard.TargetName="myEllipseGeometry"
+                             Storyboard.TargetProperty="RadiusY"
+                             Duration="0:0:0.5" From="200" To="0"
+                             FillBehavior="HoldEnd" />
+        </Storyboard>
+    </UserControl.Resources>
+    <Canvas x:Name="mainCanvas" Cursor="Hand" ClipToBounds="True">
+        <Canvas x:Name="sectorCanvas">
+            <local:CircularSectorControl BackgroundColor="#F44E4E" DisplayImage="/Images/Menu/1.png">
+                
+            </local:CircularSectorControl>
+            <local:CircularSectorControl BackgroundColor="#F45757" DisplayImage="/Images/Menu/2.png">
+                <local:CircularSectorControl.RenderTransform>
+                    <RotateTransform Angle="30" CenterX="200" CenterY="200"></RotateTransform>
+                </local:CircularSectorControl.RenderTransform>
+            </local:CircularSectorControl>
+            <local:CircularSectorControl BackgroundColor="#F44E4E" DisplayImage="/Images/Menu/3.png">
+                <local:CircularSectorControl.RenderTransform>
+                    <RotateTransform Angle="60" CenterX="200" CenterY="200"></RotateTransform>
+                </local:CircularSectorControl.RenderTransform>
+            </local:CircularSectorControl>
+            <local:CircularSectorControl BackgroundColor="#F45757" DisplayImage="/Images/Menu/4.png">
+                <local:CircularSectorControl.RenderTransform>
+                    <RotateTransform Angle="90" CenterX="200" CenterY="200"></RotateTransform>
+                </local:CircularSectorControl.RenderTransform>
+            </local:CircularSectorControl>
+            <local:CircularSectorControl BackgroundColor="#F44E4E" DisplayImage="/Images/Menu/3.png">
+                <local:CircularSectorControl.RenderTransform>
+                    <RotateTransform Angle="120" CenterX="200" CenterY="200"></RotateTransform>
+                </local:CircularSectorControl.RenderTransform>
+            </local:CircularSectorControl>
+            <local:CircularSectorControl BackgroundColor="#F45757" DisplayImage="/Images/Menu/4.png">
+                <local:CircularSectorControl.RenderTransform>
+                    <RotateTransform Angle="150" CenterX="200" CenterY="200"></RotateTransform>
+                </local:CircularSectorControl.RenderTransform>
+            </local:CircularSectorControl>
+        </Canvas>
+        <Path>
+            <Path.Data>
+                <EllipseGeometry x:Name="myEllipseGeometry" RadiusX="0" RadiusY="0" Center="200,200"></EllipseGeometry>
+            </Path.Data>
+        </Path>
+        <Grid x:Name="bottomGrid" Canvas.Left="150" Canvas.Top="150" MouseLeftButtonDown="BottomGrid_MouseLeftButtonDown">
+            <Path Data="M 0,0 A 100,100 1 0 1 200,0z" Fill="White" Stretch="Fill" Width="100" Height="50"/>
+            <TextBlock x:Name="bottomTB" Text="+" FontSize="38" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        </Grid>
+    </Canvas>
+</UserControl>

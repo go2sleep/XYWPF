@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -37,6 +38,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\Lib\System.Windows.Interactivity.dll</HintPath>
     </Reference>
@@ -74,6 +76,30 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Effect\3D\MyImageControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\3D\Win3DEffect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\3D\Win3DTriangle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\3D\WinParticle3D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\3D\WinSphereMesh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\3D\WinText3D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Effect\Card\MyCardControlBack.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -90,7 +116,47 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Effect\GridEffect\MyGridControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\GridEffect\WinGridPhoto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\ImageShow\MyImageControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\ImageShow\MyRollControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\ImageShow\WinDisplayImage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Menu\CircularSectorControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Effect\Expander\ExpanderStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\ImageControl\MyImageControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\ImageControl\WinImageShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Menu\RoundMenuControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Menu\WinRoundMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -102,7 +168,39 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Effect\MyImageControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\MyImageControl2D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Effect\MyLoadingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\MyRollControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\ParticleDNA\WinParticleDNA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Particles\WinParticle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Photo\MyPhotoControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Photo\PuzzleEffectControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Photo\WinPhotoDemo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,11 +208,43 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Effect\RollControl\MyRollControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\RollControl\WinRollControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\RoundMenu\MenuButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\RoundMenu\RoundMenuControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\RoundMenu\WinRoundMenuDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Effect\SearchTextBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Effect\Star\WinStar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\TextEffect\WinTextEffect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Effect\UCImageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\Water\WinWaterDemo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -130,11 +260,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Effect\WinAxisAngleRotation3D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Effect\WinFlipPicture.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Effect\WinGlitchDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\WinImage2D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Effect\WinImageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\WinLightEffect.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -151,6 +297,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Effect\WinLoadingDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effect\WinRollImages.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -188,7 +338,59 @@
     <Compile Include="Effect\3DWave\Win3DParticleWave.xaml.cs">
       <DependentUpon>Win3DParticleWave.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Effect\3D\MyImageControl.xaml.cs">
+      <DependentUpon>MyImageControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\3D\Particle.cs" />
+    <Compile Include="Effect\3D\SphereMeshGenerator.cs" />
+    <Compile Include="Effect\3D\Triangle.cs" />
+    <Compile Include="Effect\3D\Win3DEffect.xaml.cs">
+      <DependentUpon>Win3DEffect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\3D\Win3DTriangle.xaml.cs">
+      <DependentUpon>Win3DTriangle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\3D\WinParticle3D.xaml.cs">
+      <DependentUpon>WinParticle3D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\3D\WinSphereMesh.xaml.cs">
+      <DependentUpon>WinSphereMesh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\3D\WinText3D.xaml.cs">
+      <DependentUpon>WinText3D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\GridEffect\GridLengthAnimation.cs" />
+    <Compile Include="Effect\GridEffect\MyGridControl.xaml.cs">
+      <DependentUpon>MyGridControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\GridEffect\WinGridPhoto.xaml.cs">
+      <DependentUpon>WinGridPhoto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\ImageShow\MyImageControl.xaml.cs">
+      <DependentUpon>MyImageControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\ImageShow\MyRollControl.xaml.cs">
+      <DependentUpon>MyRollControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\ImageShow\WinDisplayImage.xaml.cs">
+      <DependentUpon>WinDisplayImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\Menu\CircularSectorControl.xaml.cs">
+      <DependentUpon>CircularSectorControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Effect\Expander\ExpanderClass.cs" />
+    <Compile Include="Effect\ImageControl\MyImageControl.xaml.cs">
+      <DependentUpon>MyImageControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\ImageControl\WinImageShow.xaml.cs">
+      <DependentUpon>WinImageShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\Menu\RoundMenuControl.xaml.cs">
+      <DependentUpon>RoundMenuControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\Menu\WinRoundMenu.xaml.cs">
+      <DependentUpon>WinRoundMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Effect\MyCanvas.cs" />
     <Compile Include="Effect\Card\MyCardControlBack.xaml.cs">
       <DependentUpon>MyCardControlBack.xaml</DependentUpon>
@@ -208,20 +410,74 @@
     <Compile Include="Effect\MyImageButtom.xaml.cs">
       <DependentUpon>MyImageButtom.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Effect\MyImageControl.xaml.cs">
+      <DependentUpon>MyImageControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\MyImageControl2D.xaml.cs">
+      <DependentUpon>MyImageControl2D.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Effect\MyLoadingControl.xaml.cs">
       <DependentUpon>MyLoadingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\MyRollControl.xaml.cs">
+      <DependentUpon>MyRollControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\ParticleDNA\Particle.cs" />
+    <Compile Include="Effect\ParticleDNA\WinParticleDNA.xaml.cs">
+      <DependentUpon>WinParticleDNA.xaml</DependentUpon>
     </Compile>
     <Compile Include="Effect\ParticlesDemo\Particle.cs" />
     <Compile Include="Effect\ParticlesDemo\ParticleSystem.cs" />
     <Compile Include="Effect\ParticlesDemo\ParticleSystemManager.cs" />
+    <Compile Include="Effect\Particles\Particle.cs" />
+    <Compile Include="Effect\Particles\ParticleSystem.cs" />
+    <Compile Include="Effect\Particles\WinParticle.xaml.cs">
+      <DependentUpon>WinParticle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\Photo\MyPhotoControl.xaml.cs">
+      <DependentUpon>MyPhotoControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\Photo\PuzzleEffectControl.xaml.cs">
+      <DependentUpon>PuzzleEffectControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\Photo\WinPhotoDemo.xaml.cs">
+      <DependentUpon>WinPhotoDemo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Effect\RingControl.xaml.cs">
       <DependentUpon>RingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\RollControl\MyRollControl.xaml.cs">
+      <DependentUpon>MyRollControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\RollControl\WinRollControl.xaml.cs">
+      <DependentUpon>WinRollControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\RoundMenu\MyButton.cs" />
+    <Compile Include="Effect\RoundMenu\RoundMenuControl.xaml.cs">
+      <DependentUpon>RoundMenuControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\RoundMenu\WinRoundMenuDemo.xaml.cs">
+      <DependentUpon>WinRoundMenuDemo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Effect\SearchTextBox.xaml.cs">
       <DependentUpon>SearchTextBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Effect\Star\Particle.cs" />
+    <Compile Include="Effect\Star\ParticleSystem.cs" />
+    <Compile Include="Effect\Star\WinStar.xaml.cs">
+      <DependentUpon>WinStar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\TextEffect\Particle.cs" />
+    <Compile Include="Effect\TextEffect\ParticleSystem.cs" />
+    <Compile Include="Effect\TextEffect\WinTextEffect.xaml.cs">
+      <DependentUpon>WinTextEffect.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Effect\UCImageBox.xaml.cs">
       <DependentUpon>UCImageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\Water\WaterEffect.cs" />
+    <Compile Include="Effect\Water\WinWaterDemo.xaml.cs">
+      <DependentUpon>WinWaterDemo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Effect\WinAlarmDemo.xaml.cs">
       <DependentUpon>WinAlarmDemo.xaml</DependentUpon>
@@ -232,11 +488,23 @@
     <Compile Include="Effect\Expander\WinExpanderDemo.xaml.cs">
       <DependentUpon>WinExpanderDemo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Effect\WinAxisAngleRotation3D.xaml.cs">
+      <DependentUpon>WinAxisAngleRotation3D.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Effect\WinFlipPicture.xaml.cs">
       <DependentUpon>WinFlipPicture.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Effect\WinGlitchDemo.xaml.cs">
+      <DependentUpon>WinGlitchDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\WinImage2D.xaml.cs">
+      <DependentUpon>WinImage2D.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Effect\WinImageBox.xaml.cs">
       <DependentUpon>WinImageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\WinLightEffect.xaml.cs">
+      <DependentUpon>WinLightEffect.xaml</DependentUpon>
     </Compile>
     <Compile Include="Effect\WinLineGradientBrush.xaml.cs">
       <DependentUpon>WinLineGradientBrush.xaml</DependentUpon>
@@ -249,6 +517,9 @@
     </Compile>
     <Compile Include="Effect\WinLoadingDemo.xaml.cs">
       <DependentUpon>WinLoadingDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effect\WinRollImages.xaml.cs">
+      <DependentUpon>WinRollImages.xaml</DependentUpon>
     </Compile>
     <Compile Include="Effect\WinSearch.xaml.cs">
       <DependentUpon>WinSearch.xaml</DependentUpon>
@@ -282,6 +553,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Effect\Water\water.ps" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -364,6 +636,31 @@
     <Resource Include="Images\img6.jpg" />
     <Resource Include="Images\img7.jpg" />
     <Resource Include="Images\img8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Menu\1.png" />
+    <Resource Include="Images\Menu\2.png" />
+    <Resource Include="Images\Menu\3.png" />
+    <Resource Include="Images\Menu\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\img0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Effect\Water\Shader.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\left.png" />
+    <Resource Include="Images\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\eagle.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

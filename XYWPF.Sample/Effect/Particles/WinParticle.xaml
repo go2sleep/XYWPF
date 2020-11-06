@@ -1,0 +1,13 @@
+﻿<Window x:Class="XYWPF.Sample.Effect.Particles.WinParticle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XYWPF.Sample.Effect.Particles"
+        mc:Ignorable="d"
+        Title="鼠标划过点亮粒子背景特效" Height="450" Width="800" WindowState="Maximized">
+    <Grid Background="#FF072159" MouseMove="Grid_MouseMove" MouseLeave="Grid_MouseLeave">
+        <Grid Name="grid_lineContainer"/>
+        <Canvas Name="cvs_particleContainer"/>
+    </Grid>
+</Window>

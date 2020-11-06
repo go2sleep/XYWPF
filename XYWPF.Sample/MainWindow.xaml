@@ -29,7 +29,7 @@
         </ResourceDictionary>
     </Window.Resources>
     <Grid>
-        <Button Content="关闭" Width="100" Height="40" Margin="20" VerticalAlignment="Top" HorizontalAlignment="Left" Click="ButtonClose_Click" />
+        <Button Content="关闭" Width="100" Height="40" Margin="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Click="ButtonClose_Click" />
         <Grid Height="320" Width="400" HorizontalAlignment="Right" VerticalAlignment="Top">
             <ScrollViewer Width="350" Style="{DynamicResource ScrollViewerStyle1}"  >
                 <WrapPanel Margin="15,50" x:Name="ImagePanel"></WrapPanel>
@@ -37,24 +37,53 @@
         </Grid>
         <StackPanel Orientation="Vertical" Margin="50 350 50 50">
             <StackPanel Orientation="Horizontal" Margin="0 0 50 0">
-                <Button Content="画刷特效"  Width="100" Height="40" Margin="20" Click="Button_Click" />
-                <Button Content="告警特效"  Width="100" Height="40" Margin="20" Click="Button_Click_1" />
-                <Button Content="滚动特效"  Width="100" Height="40" Margin="20" Click="Button_Click_2" />
-                <Button Content="搜索特效"  Width="100" Height="40" Margin="20" Click="Button_Click_3" />
-                <Button Content="粒子特效"  Width="100" Height="40" Margin="20" Click="Button_Click_4" />
-                <Button Content="图片翻转特效"  Width="100" Height="40" Margin="20" Click="Button_Click_5" />
+                <Button Content="画刷特效"  Width="200" Height="40" Margin="20" Click="Button_Click" />
+                <Button Content="告警特效"  Width="200" Height="40" Margin="20" Click="Button_Click_1" />
+                <Button Content="滚动特效"  Width="200" Height="40" Margin="20" Click="Button_Click_2" />
+                <Button Content="搜索特效"  Width="200" Height="40" Margin="20" Click="Button_Click_3" />
+                <Button Content="粒子特效"  Width="200" Height="40" Margin="20" Click="Button_Click_4" />
+                <Button Content="图片翻转特效"  Width="200" Height="40" Margin="20" Click="Button_Click_5" />
                 <Button Content="图片环形旋转轮动效果"  Width="200" Height="40" Margin="20" Click="Button_Click_6" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 50 0">
                 <Button Content="聚光灯照亮文字动画效果"  Width="200" Height="40" Margin="20" Click="Button_Click_7" />
                 <Button Content="聚光灯查看内容特效"  Width="200" Height="40" Margin="20" Click="Button_Click_8" />
                 <Button Content="加载文字水波纹动画效果"  Width="200" Height="40" Margin="20" Click="Button_Click_9" />
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0 0 50 0">
                 <Button Content="3D翻牌式倒计时特效"  Width="200" Height="40" Margin="20" Click="Button_Click_10" />
                 <Button Content="图片手风琴动态切换效果"  Width="200" Height="40" Margin="20" Click="Button_Click_11" />
                 <Button Content="字体霓虹灯渐变动画效果"  Width="200" Height="40" Margin="20" Click="Button_Click_12" />
                 <Button Content="3D粒子波浪效果"  Width="200" Height="40" Margin="20" Click="Button_Click_13" />
             </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 50 0">
+                <Button Content="3D鼠标悬停视觉差特效"  Width="200" Height="40" Margin="20" Click="Button_Click_14" />
+                <Button Content="3D手风琴式轮播图切换效果"  Width="200" Height="40" Margin="20" Click="Button_Click_15" />
+                <Button Content="3D视差的3D图片翻转特效"  Width="200" Height="40" Margin="20" Click="Button_Click_16" />
+                <Button Content="字体仿开门3D效果"  Width="200" Height="40" Margin="20" Click="Button_Click_17" />
+                <Button Content="星空效果"  Width="200" Height="40" Margin="20" Click="Button_Click_18" />
+                <Button Content="鼠标划过点亮粒子背景特效"  Width="200" Height="40" Margin="20" Click="Button_Click_19" />
+                <Button Content="鼠标拖动旋转3D发光立方体效果"  Width="200" Height="40" Margin="20" Click="Button_Click_20" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 50 0">
+                <Button Content="图片动态展示信息效果"  Width="200" Height="40" Margin="20" Click="Button_Click_21" />
+                <Button Content="背景灯光随鼠标闪动效果"  Width="200" Height="40" Margin="20" Click="Button_Click_22" />
+                <Button Content="半圆形导航菜单"  Width="200" Height="40" Margin="20" Click="Button_Click_23" />
+                <Button Content="文字粒子闪烁动画效果"  Width="200" Height="40" Margin="20" Click="Button_Click_24" />
+                <Button Content="3D立方体波浪墙效果"  Width="200" Height="40" Margin="20" Click="Button_Click_25" />
+                <Button Content="3D仿Glitch闪烁特效"  Width="200" Height="40" Margin="20" Click="Button_Click_26" />
+                <Button Content="平面三角形3D运动效果"  Width="200" Height="40" Margin="20" Click="Button_Click_27" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 50 0">
+                <Button Content="球面放大镜效果"  Width="200" Height="40" Margin="20" Click="Button_Click_28" />
+                <Button Content="DNA螺旋粒子动画特效"  Width="200" Height="40" Margin="20" Click="Button_Click_29" />
+                <Button Content="圆形菜单动态效果"  Width="200" Height="40" Margin="20" Click="Button_Click_30" />
+                <Button Content="水面波纹特效"  Width="200" Height="40" Margin="20" Click="Button_Click_31" />
+                <Button Content="棋盘式图片切换效果"  Width="200" Height="40" Margin="20" Click="Button_Click_32" />
+                <Button Content="照片墙拼图展示特效"  Width="200" Height="40" Margin="20" Click="Button_Click_33" />
+                <Button Content="图像倾斜视差效果"  Width="200" Height="40" Margin="20" Click="Button_Click_34" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 50 0">
+                <Button Content="手风琴照片墙展示效果"  Width="200" Height="40" Margin="20" Click="Button_Click_35" />
+            </StackPanel>
         </StackPanel>
-
     </Grid>
 </Window>

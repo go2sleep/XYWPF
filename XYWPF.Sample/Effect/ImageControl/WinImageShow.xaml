@@ -1,0 +1,14 @@
+﻿<Window x:Class="XYWPF.Sample.Effect.ImageControl.WinImageShow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XYWPF.Sample.Effect.ImageControl"
+        mc:Ignorable="d"
+        Title="图片动态展示信息效果" Height="450" Width="800">
+    <UniformGrid Rows="1" Columns="3" Margin="30">
+        <local:MyImageControl DisplayImage="/Images/img1.jpg" DisplayType="RoundedRectangle" DisplayTitle="Title" DisplayText="Reading Book" Margin="10"></local:MyImageControl>
+        <local:MyImageControl DisplayImage="/Images/img2.jpg" DisplayType="Heart" DisplayTitle="Title" DisplayText="Never Give Up" Margin="10"></local:MyImageControl>
+        <local:MyImageControl DisplayImage="/Images/img3.jpg" DisplayType="Star" DisplayTitle="Title" DisplayText="Hello I Love English" Margin="10"></local:MyImageControl>
+    </UniformGrid>
+</Window>

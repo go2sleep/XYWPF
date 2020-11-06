@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="XYWPF.Sample.Effect.ImageControl.MyImageControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:XYWPF.Sample.Effect.ImageControl"
+             mc:Ignorable="d" 
+             x:Name="UC">
+    <Border x:Name="imgBorder" Cursor="Hand" BorderThickness="5" BorderBrush="White" MouseEnter="ImgBorder_MouseEnter" MouseLeave="ImgBorder_MouseLeave">
+        <Border.Background>
+            <ImageBrush ImageSource="{Binding ElementName=UC,Path=DisplayImage}" Stretch="Fill"></ImageBrush>
+        </Border.Background>
+        <Grid x:Name="textGrid" Width="0" Height="0">
+            <Path x:Name="UCPath" Fill="White" Stretch="Fill" ></Path>
+            <StackPanel x:Name="textPanel" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="{Binding ElementName=UC,Path=DisplayTitle}" TextWrapping="Wrap" FontSize="24" FontWeight="Bold" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Text="{Binding ElementName=UC,Path=DisplayText}" TextWrapping="Wrap" FontSize="12" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

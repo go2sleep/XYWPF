@@ -1,0 +1,12 @@
+﻿<Window x:Class="XYWPF.Sample.Effect.ParticleDNA.WinParticleDNA"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XYWPF.Sample.Effect.ParticleDNA"
+        mc:Ignorable="d"
+        Title="DNA螺旋粒子动画特效" Height="300" Width="1000" Background="#072159">
+    <Canvas x:Name="cvs_particleContainer" Margin="0 100 0 0">
+        
+    </Canvas>
+</Window>

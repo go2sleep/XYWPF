@@ -1,0 +1,12 @@
+﻿<Window x:Class="XYWPF.Sample.Effect.RollControl.WinRollControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XYWPF.Sample.Effect.RollControl"
+        mc:Ignorable="d"
+        Title="WinRollControl" Height="450" Width="800" Background="#262626">
+    <Grid>
+        <local:MyRollControl />
+    </Grid>
+</Window>

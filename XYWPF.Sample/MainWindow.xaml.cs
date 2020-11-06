@@ -171,5 +171,159 @@ namespace XYWPF.Sample
             win.Owner = this;
             win.Show();
         }
+
+        private void Button_Click_14(object sender, RoutedEventArgs e)
+        {
+            Window win = new WinAxisAngleRotation3D();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_15(object sender, RoutedEventArgs e)
+        {
+            Window win = new WinRollImages();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_16(object sender, RoutedEventArgs e)
+        {
+            Window win = new Effect.RollControl.WinRollControl();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_17(object sender, RoutedEventArgs e)
+        {
+            Window win = new Effect._3D.WinText3D();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_18(object sender, RoutedEventArgs e)
+        {
+            Window win = new Effect.Star.WinStar();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_19(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect.Particles.WinParticle();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_20(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect._3D.Win3DEffect();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_21(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect.ImageControl.WinImageShow();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_22(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect.WinLightEffect();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_23(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect.Menu.WinRoundMenu();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_24(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect.TextEffect.WinTextEffect();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_25(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect._3D.WinParticle3D();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_26(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect.WinGlitchDemo();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_27(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect._3D.Win3DTriangle();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_28(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect._3D.WinSphereMesh();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_29(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect.ParticleDNA.WinParticleDNA();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_30(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect.RoundMenu.WinRoundMenuDemo();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_31(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect.Water.WinWaterDemo();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_32(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect.ImageShow.WinDisplayImage();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_33(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect.Photo.WinPhotoDemo();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_34(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect.WinImage2D();
+            win.Owner = this;
+            win.Show();
+        }
+
+        private void Button_Click_35(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Effect.GridEffect.WinGridPhoto();
+            win.Owner = this;
+            win.Show();
+        }
     }
 }
