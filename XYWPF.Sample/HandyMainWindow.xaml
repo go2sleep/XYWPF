@@ -9,7 +9,7 @@
         Title="常用动画特效" Height="800" Width="1000" WindowStartupLocation="CenterScreen"
         NonClientAreaBackground="#535353"
         OtherButtonHoverBackground="#44FFFFFF" 
-        ActiveGlowColor="#FF007ACC" Background="#1B1B1B" Foreground="White">
+        ActiveGlowColor="#FF007ACC" Background="#1B1B1B" Foreground="White" NonClientAreaForeground="White">
     <hc:GlowWindow.Resources>
         <Style TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonInfo}" />
     </hc:GlowWindow.Resources>
