@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XYWPF.Sample"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="800"  WindowStyle="None" WindowState="Maximized"  Background="{DynamicResource MainWindowBackground}">
+        Title="MainWindow" Height="1000" Width="1920"  WindowStyle="None"  Background="{DynamicResource MainWindowBackground}" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <ResourceDictionary>
             <Style x:Key="ScrollViewerStyle1" TargetType="{x:Type ScrollViewer}">
@@ -83,6 +83,7 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0 0 50 0">
                 <Button Content="手风琴照片墙展示效果"  Width="200" Height="40" Margin="20" Click="Button_Click_35" />
+                <Button Content="窗体变形动画"  Width="200" Height="40" Margin="20" Click="Button_Click_36" />
             </StackPanel>
         </StackPanel>
     </Grid>

@@ -325,5 +325,12 @@ namespace XYWPF.Sample
             win.Owner = this;
             win.Show();
         }
+
+        private void Button_Click_36(object sender, RoutedEventArgs e)
+        {
+            Window win = new XYWPF.Sample.Animation.WindowAnimation();
+            win.Owner = this;
+            win.Show();
+        }
     }
 }

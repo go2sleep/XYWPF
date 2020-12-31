@@ -36,6 +36,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluidKit">
+      <HintPath>..\Lib\FluidKit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -61,6 +64,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="Animation\MouseAnimation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Animation\WindowAnimation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -322,6 +329,9 @@
     </Page>
     <Compile Include="Animation\MouseAnimation.xaml.cs">
       <DependentUpon>MouseAnimation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Animation\WindowAnimation.xaml.cs">
+      <DependentUpon>WindowAnimation.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
