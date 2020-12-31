@@ -1,3 +1,3 @@
 # XYWPF
 WPF 动画特效
-![Image text](https://github.com/go2sleep/XYWPF/blob/master/XYWPF.Sample/Images/main.jpg)
+![首页图片](https://github.com/go2sleep/XYWPF/blob/master/XYWPF.Sample/Images/main.jpg)
